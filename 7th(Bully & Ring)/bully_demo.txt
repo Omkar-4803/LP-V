@@ -1,0 +1,42 @@
+
+✅ How to Demonstrate the Bully Algorithm
+
+🗣️ Start with a Short Explanation:
+“This is an implementation of the Bully Algorithm. It is used in distributed systems to elect a coordinator. The process with the highest ID becomes the coordinator. If a lower-ID process finds the coordinator is down, it starts an election.”
+
+🖥️ Demonstration Steps
+
+Step 1: Create Processes
+Enter your choice:- 1
+Enter the number of processes:- 5
+Say: “I’ve created 5 processes: P1 to P5. By default, P5 becomes the coordinator as it has the highest ID.”
+
+Step 2: Display Processes
+Enter your choice:- 2
+Say: “All processes are currently up and P5 is the coordinator.”
+
+Step 3: Bring Coordinator Down
+Enter your choice:- 4
+Enter the process number to down:- 5
+Say: “Now I’m bringing down process P5 (the coordinator).”
+
+Step 4: Start Election from a Lower Process
+Enter your choice:- 5
+Enter the process number which will perform election:- 1
+Say: “Process P1 notices the coordinator is down, so it initiates an election. Messages are sent to higher-ID processes until a live one responds.”
+
+Step 5: Display Final Status
+Enter your choice:- 2
+Say: “The election completes and the highest up process becomes the new coordinator — here, P4.”
+
+🧠 Extra Tips to Impress Examiner
+- Explain steps aloud as you do them.
+- Emphasize: “The highest alive ID wins the election.”
+- If asked why it’s called Bully, say:
+  “Because the highest ID process bullies others and takes control as coordinator.”
+
+⚠️ Handling Errors / Confusion
+If the output is cluttered:
+- Say: “Let me re-run that step for clarity.”
+- Clear the screen (cls) if needed.
+- Always display current status using choice 2.

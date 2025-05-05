@@ -1,0 +1,12 @@
+1st run : 
+
+diff terminal
+cmd:
+ python Server.py
+
+2nd :
+terminal 1 : python Client.py
+
+terminal 2 : python Client.py
+
+terminal 3 : python Client.py

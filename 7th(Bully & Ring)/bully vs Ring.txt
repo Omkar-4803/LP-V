@@ -1,0 +1,8 @@
+| **Feature**          | **Bully Algorithm**                                                 | **Ring Algorithm**                               |
+| -------------------- | ------------------------------------------------------------------- | ------------------------------------------------ |
+| **Election Process** | Process with highest ID wins, sends messages to higher ID processes | Election message passes sequentially in a ring   |
+| **Message Passing**  | Direct messages to processes with higher IDs                        | Sequential passing of election message in a ring |
+| **Fault Tolerance**  | Handles dynamic changes well; processes can resume the election     | Fragile if processes fail in the ring            |
+| **Scalability**      | Scales but message complexity increases with size                   | Scales efficiently with less message passing     |
+| **Time Complexity**  | O(n) (potentially many messages)                                    | O(n) (single round of message passing)           |
+| **Use Cases**        | Systems with clear process hierarchy                                | Systems organized in a static ring topology      |

@@ -1,0 +1,29 @@
+javac Tring.java
+
+java Tring
+
+input :
+
+Enter the number of nodes: 15
+ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 0
+Enter sender: 4
+Enter receiver: 2
+Enter Data: 25
+Do you want to remove any node? (If Yes press 1 or else press 0):
+0
+Token passing: 0-> 1-> 2-> 3-> 4
+Sender 4 sending data: 25
+Data 25 forwarded by 5
+Data 25 forwarded by 6
+Data 25 forwarded by 7
+Data 25 forwarded by 8
+Data 25 forwarded by 9
+Data 25 forwarded by 10
+Data 25 forwarded by 11
+Data 25 forwarded by 12
+Data 25 forwarded by 13
+Data 25 forwarded by 14
+Data 25 forwarded by 0
+Data 25 forwarded by 1
+Receiver 2 received data: 25
+Do you want to send more data if yes press 1 or press zero

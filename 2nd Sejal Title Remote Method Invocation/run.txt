@@ -1,0 +1,15 @@
+# 1. Compile all Java files
+javac *.java
+
+# 2. Start the RMI registry (in background or separate terminal)
+start rmiregistry   # On Windows
+# OR
+rmiregistry &       # On Linux/macOS
+
+# 3. Run the RMI server
+java Server
+
+# (In a separate terminal window or after server is running...)
+
+# 4. Run the client
+java Client

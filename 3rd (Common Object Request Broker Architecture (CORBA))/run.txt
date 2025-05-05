@@ -1,0 +1,16 @@
+# 1. Compile the IDL file using idlj
+idlj -fall CalculatorModule.idl
+
+# This creates stub and skeleton files in the CalculatorModule directory
+
+# 2. Compile all Java files (including generated files)
+javac CalculatorModule/*.java CalculatorImpl.java CalculatorServer.java CalculatorClient.java
+
+# 3. Start the CORBA NameService (run this in a separate terminal window)
+tnameserv -ORBInitialPort 1050 &
+
+# 4. Run the server (in a new terminal)
+java CalculatorServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+# 5. Run the client (in another terminal)
+java CalculatorClient -ORBInitialPort 1050 -ORBInitialHost localhost
